@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	 Array.prototype.buscar = function(nombre){
+	var mensaje = 'El nombre no ha sido hallado';
+	this.forEach(function(elemento, index){
+		if (elemento == nombre) {
+			mensaje = 'El nombre :'+nombre+' si a sido encontrado en la posicion '+index+' del arreglo';
+		}
+	});
+	return mensaje;
+}
+
+</script>
+     	
+</body>
+</html>
